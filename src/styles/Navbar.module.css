@@ -1,0 +1,64 @@
+/* Navbar.module.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+  padding: 1em;
+  position: fixed; /* Fixa o menu no topo da página */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Garantindo que o menu fique acima de outros elementos */
+  /* margin-left: -32px; */
+}
+
+.navMenu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navItem {
+  padding: .5em;
+  margin-right: 1em;
+}
+
+.navItem a {
+  color: #fff;
+  
+  text-decoration: none;
+}
+
+.navItem a:hover {
+  color: #ffbb33;
+}
+
+.hamburger {
+  display: none; /* Esconder o menu de hambúrguer em telas maiores */
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  .navMenu {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Ajuste dependendo da altura da navbar */
+    left: 0;
+    background-color: #222;
+    display: none; /* Esconda o menu por padrão em telas menores */
+  }
+
+  .navMenu.navMenuOpen {
+    display: flex; /* Exiba o menu quando o estado estiver aberto */
+  }
+
+  .hamburger {
+    display: block; /* Exibe o menu de hambúrguer em telas menores */
+  }
+}
