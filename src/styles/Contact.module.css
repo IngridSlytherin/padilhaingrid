@@ -1,3 +1,48 @@
-.Contact {
-  
-}
+.contactSection {
+   position:relative;
+   padding: 20px;
+   max-width: 600px;
+   margin: 50vh auto;
+   background-color: #f4f4f4; /* Cor de fundo do quadro */
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(25, 13, 13, 0.551); /* Borda sombreada */
+   text-align: center; /* Centraliza o texto dentro do quadro */
+ }
+ 
+ .contactInfo {
+   padding: 20px; /* Espaçamento interno */
+ }
+ 
+ .contactInfo p {
+   font-size: 18px;
+   margin: 10px 0;
+ }
+ 
+ .contactInfo a {
+   color: #0073e6;
+   text-decoration: none;
+   font-weight: bold;
+ }
+ 
+ .contactInfo a:hover {
+   text-decoration: underline;
+ }
+ 
+ .icons {
+   margin-top: 20px;
+ }
+ 
+ .icons a {
+   display: inline-flex;
+   align-items: center;
+   margin-right: 15px;
+   text-decoration: none;
+   color: #333;
+ }
+ 
+ .icons img {
+   width: 24px;
+   height: 24px;
+   margin-right: 8px;
+ }
+ 
