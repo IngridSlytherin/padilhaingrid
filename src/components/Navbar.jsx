@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Importando Link
 import styles from '../styles/Navbar.module.css';
 
 const Navbar = ({ additionalClass = '' }) => {
@@ -12,9 +13,15 @@ const Navbar = ({ additionalClass = '' }) => {
         ☰
       </div>
       <ul className={`${styles.navMenu} ${isOpen ? styles.navMenuOpen : ''}`}>
-        <li className={styles.navItem}><a href="/">Home</a></li>
-        <li className={styles.navItem}><a href="/about">About</a></li>
-        <li className={styles.navItem}><a href="/Contact">Contact</a></li>
+        <li className={styles.navItem}>
+          <Link to="/">Home</Link> {/* Substitua <a href="/">Home</a> por <Link to="/">Home</Link> */}
+        </li>
+        <li className={styles.navItem}>
+          <Link to="/about">About</Link> {/* Substitua <a href="/about">About</a> por <Link to="/about">About</Link> */}
+        </li>
+        <li className={styles.navItem}>
+          <Link to="/contact">Contact</Link> {/* Substitua <a href="/contact">Contact</a> por <Link to="/contact">Contact</Link> */}
+        </li>
       </ul>
     </nav>
   );
